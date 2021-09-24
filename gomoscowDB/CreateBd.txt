@@ -1,3 +1,5 @@
+CREATE DATABASE gomoscowBD;
+
 create table Zone (
 	Id_zone INT IDENTITY(1,1) NOT NULL CONSTRAINT PK_Id_zone PRIMARY KEY,
 	Title varchar(100) NOT NULL
