@@ -14,10 +14,30 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('home');
+});
+
+Route::get('/newpoints', function () {
+    return view('newpoints');
+});
+
+Route::get('/menu', function () {
+    return view('menu');
+});
+
+Route::get('/bonuses', function () {
+    return view('bonuses');
 });
 
 
 Route::get('/phpinfo', function () {
     return phpinfo();
+});
+
+Route::get('/pay', function () {
+    return view('pay');
+});
+
+Route::get('/validate', function () {
+    return view('validate');
 });
